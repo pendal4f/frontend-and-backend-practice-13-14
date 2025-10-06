@@ -209,3 +209,69 @@ body {
 .footer-contact a:hover {
     text-decoration: underline;
 }
+
+/* ===== ПЕРЕМЕННЫЕ ЦВЕТОВ ===== */
+:root {
+    --bg-gradient: linear-gradient(135deg, #d44502 0%, #7a02d4 100%);
+    --page-bg: #f9f9f9;
+    --text-color: #000;
+    --accent1: #7a02d4;
+    --accent2: #d44502;
+    --header-footer-bg: linear-gradient(135deg, #7a02d4 0%, #d44502 100%);
+}
+
+/* ===== ТЁМНАЯ ТЕМА ===== */
+body.dark-theme {
+    --bg-gradient: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    --page-bg: #222;
+    --text-color: #eee;
+    --accent1: #ffcc00;
+    --accent2: #999;
+    --header-footer-bg: linear-gradient(135deg, #111 0%, #444 100%);
+}
+
+/* ===== ПРИМЕНЕНИЕ ===== */
+body {
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    transition: background 0.4s, color 0.4s;
+}
+
+.page-container {
+    background: var(--page-bg);
+    transition: background 0.4s, color 0.4s;
+}
+
+.header, .footer {
+    background: var(--header-footer-bg);
+    color: var(--text-color);
+}
+
+.nav {
+    background: var(--accent1);
+}
+
+.experience-card, .about-me {
+    background: var(--page-bg);
+    border-left: 4px solid var(--accent2);
+    color: var(--text-color);
+}
+
+/* ===== КНОПКА-ПЕРЕКЛЮЧАТЕЛЬ ===== */
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 26px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.3);
+}
