@@ -4,71 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div id="header">Хэдер</div>
+    <div class="page-container">
 
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+        <!-- Хэдер -->
+        <header class="header">
+            Хэдер
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="content">
+            <h1 class="section-title">Каталог товаров</h1>
+
+            <div class="experience-card">
+                <h3 class="experience-title">Товар 1: Велосипед христианский</h3>
+                <img src="../images/tovar1.jpg" alt="Товар 1" width="150" height="150">
+                <p>Цена: 5000 €</p>
+            </div>
+
+            <div class="experience-card">
+                <h3 class="experience-title">Товар 2: Личный скрипач</h3>
+                <img src="../images/tovar2.jpg" alt="Товар 2" width="150" height="150">
+                <p>Цена: 1200 руб/час</p>
+            </div>
+
+            <div class="experience-card">
+                <h3 class="experience-title">Товар 3: Фунчоза</h3>
+                <img src="../images/tovar3.jpg" alt="Товар 3" width="150" height="150">
+                <p>Цена: 1488 $</p>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <p class="footer-text">Спасибо, что посещаете этот сайт :)</p>
+            <p class="footer-contact">
+                Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
+                Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
+            </p>
+        </footer>
 
     </div>
-
-<div id="content">
-    <!-- Товар 1 -->
-    <div class="product">
-        <img src="../images/tovar1.jpg" alt="Товар 1" width="150" height="150">
-        <h3>Товар 1: Велосипед христианский</h3>
-        <p>Цена: 5000 €.</p>
-    </div>
-    <div id="content">
-    <!-- Товар 1 -->
-    <div class="product">
-        <img src="../images/tovar1.jpg" alt="Товар 1" width="150" height="150">
-        <h3>Товар 1: Велосипед христианский</h3>
-        <p>Цена: 5000 €.</p>
-    </div>
-
-    <!-- Товар 2 -->
-    <div class="product">
-        <img src="../images/tovar2.jpg" alt="Товар 2" width="150" height="150">
-        <h3>Товар 2: Личный скрипач</h3>
-        <p>Цена: 1200 руб/час.</p>
-    </div>
-    <!-- Товар 2 -->
-    <div class="product">
-        <img src="../images/tovar2.jpg" alt="Товар 2" width="150" height="150">
-        <h3>Товар 2: Личный скрипач</h3>
-        <p>Цена: 1200 руб/час.</p>
-    </div>
-
-    <!-- Товар 3 -->
-    <div class="product">
-        <img src="../images/tovar3.jpg" alt="Товар 3" width="150" height="150">
-        <h3>Товар 3: Фунчоза</h3>
-        <p>Цена: 1488 $.</p>
-    </div>
-</div>
-
-
-    <div id="footer">Футер</div>
-    <!-- Товар 3 -->
-    <div class="product">
-        <img src="../images/tovar3.jpg" alt="Товар 3" width="150" height="150">
-        <h3>Товар 3: Фунчоза</h3>
-        <p>Цена: 1488 $.</p>
-    </div>
-<footer>
-    <p class="footer-text">Присмотрели себе что-то?</p>
-    <p class="footer-contact">
-        Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
-        Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
-    </p>
-</footer>
 </body>
 </html>

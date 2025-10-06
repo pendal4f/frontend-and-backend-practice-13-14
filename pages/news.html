@@ -4,48 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div id="header">Хэдер</div>
+    <div class="page-container">
+        
+        <!-- Хэдер -->
+        <header class="header">
+            Хэдер
+        </header>
 
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="content">
+            <h1 class="section-title">Новости</h1>
+
+            <div class="experience-card">
+                <h3 class="experience-title">Новость 1: Запуск нового проекта</h3>
+                <p class="experience-desc">Дата: 06.10.2025 | Автор: Халин Пётр</p>
+                <p>Сегодня был официально запущен новый проект, который поможет.</p>
+            </div>
+
+            <div class="experience-card">
+                <h3 class="experience-title">Новость 2: Обновление сайта</h3>
+                <p class="experience-desc">Дата: 03.10.2025 | Автор: Гарри Поттер</p>
+                <p>На сайте появилась новая страница с каталогом товаров и новостной лентой. Теперь купить товары за деньги бабушки стало проще, а отслеживание дурных вечстей — быстрее.</p>
+            </div>
+
+            <div class="experience-card">
+                <h3 class="experience-title">Новость 3: Просмотр пенталогии Сумерки</h3>
+                <p class="experience-desc">Дата: 05.10.2025 | Автор: Эдвард Каллен</p>
+                <p>Смотреть онлайн: <a href="https://rutube.ru/plst/346890/">https://rutube.ru/plst/346890/</a></p>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <p class="footer-text">Спасибо, что посещаете этот сайт :)</p>
+            <p class="footer-contact">
+                Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
+                Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
+            </p>
+        </footer>
 
     </div>
-
-    <div id="content">
-        <!-- Новость 1 -->
-        <div class="news-block">
-            <h2>Новость 1: Запуск нового проекта</h2>
-            <p>Дата: 06.10.2025 | Автор: Халин Пётр</p>
-            <p>Сегодня был официально запущен новый проект, который поможет.</p>
-        </div>
-
-        <!-- Новость 2 -->
-        <div class="news-block">
-            <h2>Новость 2: Обновление сайта</h2>
-            <p>Дата: 03.10.2025 | Автор: Гарри Поттер</p>
-            <p>На сайте появилась новая страница с каталогом товаров и новостной лентой. Теперь купить товары за деньги бабушки стало проще, а отслеживание дурных вечстей - быстрее.</p>
-        </div>
-
-        <!-- Новость 3 -->
-        <div class="news-block">
-            <h2>Новость 3: Просмотр пенталогии Сумерки</h2>
-            <p>Дата: 05.10.2025 | Автор: Эдвард Каллен</p>
-            <p>Смотреть онлайн <a href="https://rutube.ru/plst/346890/">https://rutube.ru/plst/346890/</a></p>
-        </div>
-    <footer>
-        <p class="footer-text">Запишите даты мероприятий на листочек!</p>
-        <p class="footer-contact">
-            Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
-            Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
-        </p>
-    </footer>
 </body>
 </html>

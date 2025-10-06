@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div id="header">Хэдер</div>
+    <div class="page-container">
 
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+        <!-- Хэдер -->
+        <header class="header">
+            Хэдер
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="content">
+            <h1 class="section-title">Контакты</h1>
+            <p>Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a></p>
+            <p>Адрес: г. Москва, ул. Советской армии д15 кв.260</p>
+            <button onclick="alert('Спасибо, мы вам перезвоним!')">Позвоните мне</button>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <p class="footer-text">АЛО БИЗНЕС!!! да да деньги</p>
+            <p class="footer-contact">
+                Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
+                Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
+            </p>
+        </footer>
 
     </div>
-
-    <div id="content">
-        <p>Email: petrkhalin33@gmail.com</p>
-        <p>Адрес: г. Москва, ул. Советской армии д15 кв.260</p>
-        <button onclick="alert('Спасибо, мы вам перезвоним!')">Позвоните мне</button>
-    </div>
-<footer>
-    <p class="footer-text">АЛО БИЗНЕС!!! да да деньги</p>
-    <p class="footer-contact">
-        Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
-        Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
-    </p>
-</footer>
 </body>
 </html>

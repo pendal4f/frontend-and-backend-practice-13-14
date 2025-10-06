@@ -1,54 +1,86 @@
 <!DOCTYPE html>
-<html lamg = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа</title>
-    </head>
-    <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pages/news.html">Новости</a></li>
-                <li><a href="pages/practices.html">Практики</a></li> 
-                <li><a href="pages/goods.html">Товары</a></li>
-                <li><a href="pages/contacts.html">Контакты</a></li>
-            </ul>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семестровая работа</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        
+        <!-- Хэдер -->
+        <header class="header">
+            Хэдер
+        </header>
 
-        </div>
-        <div id="content">
-            <p>Информация об авторе</p>
-            <img src="images/avtor.jpg" alt="Фото автора" width="200" height="250">
-            <p>{Халин Пётр Сергеевич}</p>
-            <p>ЭФБО-11-24</p>
-            <p>Обо мне: Я родился в Москве в 2006 на на цветном бульваре 0_o.</p>
-            <p>Глупость рано ударила в голову. В четыре активно ругался. Потом школа, форма, хор, драки, клей. Так я становился всё сильней. Воровал деньги в раздевалке у бабушек.</p>
-            <div>Навык 1: воровать деньги у бабушек</div>
-            <div>Навык 2: умею готовить (только на себя!)</div>
-            <div>Навык 3: умею элегантно сокорбить</div>
-            <div>Навык 4: умею писать стихи ну или стоя</div>
-            <div>
-                Мой опыт работы:
-                <div>
-                    Опыт 1<br>
-                    Работал фантазёром. Сочинял и вымышлял.
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="content">
+            
+            <!-- Профиль автора -->
+            <section class="profile-section">
+                <div class="profile-header">
+                    <h1 class="profile-title">Информация об авторе</h1>
+                    <img class="profile-photo" src="images/avtor.jpg" alt="Фото автора">
+                    <h2 class="profile-name">Халин Пётр Сергеевич</h2>
+                    <p class="profile-group">ЭФБО-11-24</p>
                 </div>
-                <div>
-                    Опыт 2<br>
-                    Подрабатывал воровством. Воровал и продавал.
+
+                <div class="about-me">
+                    <p>Обо мне: Я родился в Москве в 2006 на цветном бульваре 0_o. Глупость рано ударила в голову. В четыре активно ругался. Потом школа, форма, хор, драки, клей. Так я становился всё сильней. Воровал деньги в раздевалке у бабушек.</p>
                 </div>
-                <div>
-                    Опыт 3<br>
-                    Работал поваром. Готовил и орал.
+
+                <!-- Навыки -->
+                <div class="skills-container">
+                    <div class="skill-tag">Навык 1: воровать деньги у бабушек</div>
+                    <div class="skill-tag">Навык 2: умею готовить (только на себя!)</div>
+                    <div class="skill-tag">Навык 3: умею элегантно сокорбить</div>
+                    <div class="skill-tag">Навык 4: умею писать стихи ну или стоя</div>
                 </div>
-            </div>
-        <footer>
+
+                <!-- Опыт работы -->
+                <div class="experience-section">
+                    <h2 class="section-title">Мой опыт работы</h2>
+
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">Работал фантазёром. Сочинял и вымышлял.</p>
+                    </div>
+
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Подрабатывал воровством. Воровал и продавал.</p>
+                    </div>
+
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Работал поваром. Готовил и орал.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
             <p class="footer-text">Спасибо, что посещаете этот сайт :]</p>
             <p class="footer-contact">
                 Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
                 Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
             </p>
-        </footer>  
-    </body>
+        </footer>
+        
+    </div>
+</body>
 </html>

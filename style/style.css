@@ -1,0 +1,211 @@
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d44502 0%, #7a02d4 100%); /* Твоя палитра */
+    min-height: 100vh;
+}
+
+/* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+/* ===== ШАПКА ===== */
+.header {
+    background: linear-gradient(135deg, #7a02d4 0%, #d44502 100%);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.nav {
+    background: #7a02d4;
+    padding: 20px 0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.content {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ===== ПРОФИЛЬ ===== */
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-title {
+    font-size: 32px;
+    color: #7a02d4;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 280px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 4px solid #d44502;
+    box-shadow: 0 8px 25px rgba(212, 69, 2, 0.3);
+}
+
+.profile-name {
+    font-size: 24px;
+    color: #d44502;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.profile-group {
+    font-size: 18px;
+    color: #7a02d4;
+    margin: 5px 0;
+}
+
+/* ===== ОБО МНЕ ===== */
+.about-me {
+    background: linear-gradient(135deg, #fff0eb 0%, #fceaff 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border-left: 5px solid #d44502;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ===== НАВЫКИ ===== */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #d44502 0%, #7a02d4 100%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(212, 69, 2, 0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 69, 2, 0.4);
+}
+
+/* ===== ОПЫТ РАБОТЫ ===== */
+.experience-section {
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #7a02d4;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.experience-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid #d44502;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateX(5px);
+}
+
+.experience-title {
+    font-size: 20px;
+    color: #d44502;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.experience-desc {
+    color: #7a02d4;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== ФУТЕР ===== */
+.footer {
+    background: linear-gradient(135deg, #7a02d4 0%, #d44502 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 2px solid rgba(255,255,255,0.1);
+}
+
+.footer-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.footer-contact {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-contact a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
