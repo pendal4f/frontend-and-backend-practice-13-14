@@ -28,45 +28,48 @@
         <!-- Основной контент -->
         <main class="content">
             <h1 class="section-title">Контакты</h1>
-            <p>Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a></p>
-            <p>Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a></p>
 
-            <button id="openDialog" class="skill-tag" type="button">Написать нам</button>
+            <section class="contacts-container">
+                <p>Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a></p>
+                <p>Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a></p>
 
-            <dialog id="contactDialog">
-                <h2>Обратная связь</h2>
-                <form id="contactForm" method="dialog">
-                    <label for="name">Имя</label>
-                    <input id="name" name="name" type="text" required minlength="2">
+                <button id="openDialog" class="skill-tag" type="button">Написать нам</button>
 
-                    <label for="email">E-mail</label>
-                    <input id="email" name="email" type="email" required>
+                <dialog id="contactDialog">
+                    <h2>Обратная связь</h2>
+                    <form id="contactForm" method="dialog">
+                        <label for="name">Имя</label>
+                        <input id="name" name="name" type="text" required minlength="2">
 
-                    <label for="phone">Телефон</label>
-                    <input id="phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00"
-                        required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" required>
 
-                    <label for="topic">Тема</label>
-                    <select id="topic" name="topic" required>
-                        <option value="">Выберите тему</option>
-                        <option>Вопрос</option>
-                        <option>Заказ</option>
-                    </select>
+                        <label for="phone">Телефон</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00"
+                               required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
 
-                    <label for="message">Сообщение</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="topic">Тема</label>
+                        <select id="topic" name="topic" required>
+                            <option value="">Выберите тему</option>
+                            <option>Вопрос</option>
+                            <option>Заказ</option>
+                        </select>
 
-                    <div style="margin-top:15px;">
-                        <button type="button" id="closeDialog" class="skill-tag">Закрыть</button>
-                        <button type="submit" class="skill-tag">Отправить</button>
-                    </div>
-                </form>
-            </dialog>
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <div class="dialog-buttons">
+                            <button type="button" id="closeDialog" class="skill-tag">Закрыть</button>
+                            <button type="submit" class="skill-tag">Отправить</button>
+                        </div>
+                    </form>
+                </dialog>
+            </section>
         </main>
 
         <!-- Футер -->
         <footer class="footer">
-            <p class="footer-text">АЛО БИЗНЕС!!! да да деньги</p>
+            <p class="footer-text">Спасибо, что посещаете наш сайт!</p>
             <p class="footer-contact">
                 Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
                 Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
