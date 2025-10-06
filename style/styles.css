@@ -117,9 +117,9 @@ body {
 /* ===== НАВЫКИ ===== */
 .skills-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center;    /* Центрирование по горизонтали */
+    gap: 15px;              /* Вертикальный отступ между навыками */
     margin: 30px 0;
 }
 
@@ -132,12 +132,21 @@ body {
     font-size: 14px;
     box-shadow: 0 4px 15px rgba(212, 69, 2, 0.3);
     transition: all 0.3s ease;
+    text-align: center;
+    width: fit-content; /* Чтобы элементы не растягивались на всю ширину */
 }
 
 .skill-tag:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(212, 69, 2, 0.4);
 }
+
+/* Заголовок "Мои навыки" по центру */
+.skills-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 /* ===== ОПЫТ РАБОТЫ ===== */
 .experience-section {
