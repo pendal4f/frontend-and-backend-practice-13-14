@@ -219,7 +219,7 @@
 .skills__title {
   text-align: center;
   margin-bottom: var(--space-lg);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .skills__grid {
@@ -272,7 +272,7 @@
 
 .section-title {
   font-size: var(--font-size-2xl);
-  color: var(--color-primary);
+  color: var(--color-text);
   text-align: center;
   margin-bottom: var(--space-lg);
   font-weight: 300;
@@ -385,6 +385,9 @@
   text-decoration: none;
   transition: var(--transition-fast);
 }
+[data-theme="dark"] .contacts__link {
+  color: var(--color-secondary);
+}
 
 .contacts__link:hover {
   color: var(--color-secondary);
@@ -417,6 +420,9 @@
     text-align: center;
     transition: color var(--transition-slow);
 }
+[data-theme="dark"] .dialog h2 {
+  color: var(--color-accent);
+}
 
 .dialog__form {
     display: flex;
@@ -429,6 +435,9 @@
     color: var(--color-primary);
     font-size: var(--font-size-base);
     transition: color var(--transition-slow);
+}
+[data-theme="dark"] .dialog__label {
+  color: var(--color-accent);
 }
 
 .dialog__input,
@@ -450,7 +459,11 @@
     outline: none;
     border-color: var(--color-primary);
     box-shadow: 0 0 0 3px rgba(122, 2, 212, 0.1);
-}
+  }
+    [data-theme="dark"] .dialog__input:focus, .dialog__select:focus, .dialog__textarea:focus {
+    color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(212, 65, 2, 0.1);
+  }
 
 .dialog__input::placeholder,
 .dialog__textarea::placeholder {
@@ -623,6 +636,10 @@
     margin: 0 0 var(--space-sm) 0;
     font-size: 1.25rem;
 }
+ [data-theme="dark"] .product-card__title {
+    color: var(--color-accent);
+  }
+
 
 .product-card__price {
     color: var(--color-secondary);
@@ -654,6 +671,9 @@
     border-left: 4px solid var(--color-primary);
     transition: var(--transition-normal);
 }
+[data-theme="dark"] .news-card {
+  border-left: 4px solid var(--color-secondary);
+  }
 
 .news-card:hover {
     transform: translateX(5px);
@@ -669,6 +689,10 @@
     margin: 0 0 var(--space-xs) 0;
     font-size: 1.25rem;
 }
+[data-theme="dark"] .news-card__title {
+    color: var(--color-accent);
+  }
+
 
 .news-card__meta {
     color: var(--color-text-muted);
@@ -708,6 +732,9 @@
     transition: var(--transition-normal);
     border-top: 4px solid var(--color-primary);
 }
+[data-theme="dark"] .practice-card {
+  border-top: 4px solid var(--color-secondary);
+  }
 
 .practice-card:hover {
     transform: translateY(-3px);
@@ -719,6 +746,9 @@
     margin: 0 0 var(--space-sm) 0;
     font-size: 1.25rem;
 }
+[data-theme="dark"] .practice-card__title {
+  color: var(--color-accent);
+  }
 
 .practice-card__desc {
     color: var(--color-text-muted);
