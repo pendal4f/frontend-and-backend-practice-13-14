@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров</title>
     <link rel="stylesheet" href="../style/styles.css">
 </head>
-<body>
-    <div class="page-container">
+<body class="page">
+    <div class="page__container">
 
         <!-- Хэдер -->
         <header class="header">
+            <h1 class="header__title">Каталог товаров</h1>
             <button id="themeToggle" class="theme-btn" type="button">🌞</button>
         </header>
 
         <!-- Навигация -->
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="goods.html">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
 
@@ -29,31 +30,42 @@
         <main class="content">
             <h1 class="section-title">Каталог товаров</h1>
 
-            <section class="products-grid">
-                <article class="product-card">
-                    <h2 class="product-name">Велосипед христианский</h2>
-                    <img class="product-image" src="../images/tovar1.jpg" alt="Велосипед христианский">
-                    <p class="product-price">Цена: 5000 €</p>
-                </article>
+            <section class="products">
+                <div class="products__grid">
+                    <article class="product-card">
+                        <img class="product-card__image" src="../images/tovar1.jpg" alt="Велосипед христианский">
+                        <div class="product-card__content">
+                            <h2 class="product-card__title">Велосипед христианский</h2>
+                            <p class="product-card__price">Цена: 5000 €</p>
+                            <button class="product-card__button skill">Добавить в корзину</button>
+                        </div>
+                    </article>
 
-                <article class="product-card">
-                    <h2 class="product-name">Личный скрипач</h2>
-                    <img class="product-image" src="../images/tovar2.jpg" alt="Личный скрипач">
-                    <p class="product-price">Цена: 1200 руб/час</p>
-                </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="../images/tovar2.jpg" alt="Личный скрипач">
+                        <div class="product-card__content">
+                            <h2 class="product-card__title">Личный скрипач</h2>
+                            <p class="product-card__price">Цена: 1200 руб/час</p>
+                            <button class="product-card__button skill">Добавить в корзину</button>
+                        </div>
+                    </article>
 
-                <article class="product-card">
-                    <h2 class="product-name">Фунчоза</h2>
-                    <img class="product-image" src="../images/tovar3.jpg" alt="Фунчоза">
-                    <p class="product-price">Цена: 1488 $</p>
-                </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="../images/tovar3.jpg" alt="Фунчоза">
+                        <div class="product-card__content">
+                            <h2 class="product-card__title">Фунчоза</h2>
+                            <p class="product-card__price">Цена: 1488 $</p>
+                            <button class="product-card__button skill">Добавить в корзину</button>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
 
         <!-- Футер -->
         <footer class="footer">
-            <p class="footer-text">Присмотрели себе что-то?</p>
-            <p class="footer-contact">
+            <p class="footer__text">Присмотрели себе что-то?</p>
+            <p class="footer__contact">
                 Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
                 Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
             </p>

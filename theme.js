@@ -1,16 +1,32 @@
-const themeButton = document.getElementById('themeToggle');
+class ThemeManager {
+  constructor() {
+    this.themeToggle = document.getElementById('themeToggle');
+    this.init();
+  }
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    document.body.classList.add('dark-theme');
-    themeButton.textContent = '💫';
-} else {
-    themeButton.textContent = '🌞';
+  init() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    this.setTheme(savedTheme);
+    
+    this.themeToggle.addEventListener('click', () => {
+      this.toggleTheme();
+    });
+  }
+
+  setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    this.themeToggle.textContent = theme === 'dark' ? '💫' : '🌞';
+    localStorage.setItem('theme', theme);
+  }
+
+  toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    this.setTheme(newTheme);
+  }
 }
 
-themeButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    const isDark = document.body.classList.contains('dark-theme');
-    themeButton.textContent = isDark ? '💫' : '🌞';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+// Инициализация при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+  new ThemeManager();
 });

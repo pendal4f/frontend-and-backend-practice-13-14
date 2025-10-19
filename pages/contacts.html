@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <link rel="stylesheet" href="../style/styles.css">
 </head>
-<body>
-    <div class="page-container">
+<body class="page">
+    <div class="page__container">
 
         <!-- Хэдер -->
         <header class="header">
+            <h1 class="header__title">Контакты</h1>
             <button id="themeToggle" class="theme-btn" type="button">🌞</button>
         </header>
 
         <!-- Навигация -->
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+                <li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
 
@@ -29,38 +30,42 @@
         <main class="content">
             <h1 class="section-title">Контакты</h1>
 
-            <section class="contacts-container">
-                <p>Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a></p>
-                <p>Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a></p>
+            <section class="contacts">
+                <div class="contacts__item">
+                    <p>Телефон: <a href="tel:+79060432354" class="contacts__link">+7 (906) 043-23-54</a></p>
+                </div>
+                <div class="contacts__item">
+                    <p>Email: <a href="mailto:petrkhalin33@gmail.com" class="contacts__link">petrkhalin33@gmail.com</a></p>
+                </div>
 
-                <button id="openDialog" class="skill-tag" type="button">Написать нам</button>
+                <button id="openDialog" class="skill" type="button">Написать нам</button>
 
-                <dialog id="contactDialog">
+                <dialog id="contactDialog" class="dialog">
                     <h2>Обратная связь</h2>
-                    <form id="contactForm" method="dialog">
-                        <label for="name">Имя</label>
-                        <input id="name" name="name" type="text" required minlength="2">
+                    <form id="contactForm" method="dialog" class="dialog__form">
+                        <label for="name" class="dialog__label">Имя</label>
+                        <input id="name" name="name" type="text" required minlength="2" class="dialog__input">
 
-                        <label for="email">E-mail</label>
-                        <input id="email" name="email" type="email" required>
+                        <label for="email" class="dialog__label">E-mail</label>
+                        <input id="email" name="email" type="email" required class="dialog__input">
 
-                        <label for="phone">Телефон</label>
+                        <label for="phone" class="dialog__label">Телефон</label>
                         <input id="phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00"
-                               required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+                               required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" class="dialog__input">
 
-                        <label for="topic">Тема</label>
-                        <select id="topic" name="topic" required>
+                        <label for="topic" class="dialog__label">Тема</label>
+                        <select id="topic" name="topic" required class="dialog__select">
                             <option value="">Выберите тему</option>
                             <option>Вопрос</option>
                             <option>Заказ</option>
                         </select>
 
-                        <label for="message">Сообщение</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="message" class="dialog__label">Сообщение</label>
+                        <textarea id="message" name="message" rows="4" required class="dialog__textarea"></textarea>
 
-                        <div class="dialog-buttons">
-                            <button type="button" id="closeDialog" class="skill-tag">Закрыть</button>
-                            <button type="submit" class="skill-tag">Отправить</button>
+                        <div class="dialog__buttons">
+                            <button type="button" id="closeDialog" class="skill">Закрыть</button>
+                            <button type="submit" class="skill">Отправить</button>
                         </div>
                     </form>
                 </dialog>
@@ -69,8 +74,8 @@
 
         <!-- Футер -->
         <footer class="footer">
-            <p class="footer-text">Спасибо, что посещаете наш сайт!</p>
-            <p class="footer-contact">
+            <p class="footer__text">Спасибо, что посещаете наш сайт!</p>
+            <p class="footer__contact">
                 Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
                 Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
             </p>
