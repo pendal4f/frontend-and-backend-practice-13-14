@@ -138,7 +138,7 @@
 }
 
 [data-theme="dark"] .nav__link--active {
-  background: var(--color-surface); /* Градиент вместо цвета */
+  background: var(--color-surface);
 }
 
 /* ===== БЛОК CONTENT ===== */
