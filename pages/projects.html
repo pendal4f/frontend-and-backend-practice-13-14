@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Проекты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="page">
+    <div class="page__container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="header__title h3 mb-1">Халин Пётр Сергеевич</h1>
+                        <p class="mb-0 opacity-75">Студент-разработчик</p>
+                    </div>
+                    <div class="col-auto">
+                        <button id="themeToggle" class="theme-btn" type="button">🌞</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--active" href="projects.html">Проекты</a></li>
+                    <li class="nav__item"><a class="nav__link" href="diary.html">Дневник</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1 class="section-title mb-0">Мои проекты</h1>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">Все</button>
+                        <button class="filter-btn" data-filter="html">HTML</button>
+                        <button class="filter-btn" data-filter="js">JS</button>
+                        <button class="filter-btn" data-filter="react">React</button>
+                    </div>
+                </div>
+
+                <section class="projects">
+                    <div class="row g-4">
+                        <!-- Project 1 -->
+                        <div class="col-md-6 col-lg-4" data-category="html">
+                            <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                <div class="project-card__image">
+                                    <img src="../images/avtor.jpg" alt="Личный сайт">
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Личный сайт</h3>
+                                    <p class="project-card__tech">HTML, CSS</p>
+                                    <p class="project-card__desc">Персональный сайт-портфолио с адаптивным дизайном</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="col-md-6 col-lg-4" data-category="js">
+                            <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                <div class="project-card__image">
+                                    <img src="../images/js.jpg" alt="Todo-приложение">
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Todo-приложение</h3>
+                                    <p class="project-card__tech">JavaScript</p>
+                                    <p class="project-card__desc">Приложение для управления задачами с локальным хранилищем</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="col-md-6 col-lg-4" data-category="react">
+                            <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                <div class="project-card__image">
+                                    <img src="../images/react.jpg" alt="Интернет-магазин">
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Интернет-магазин</h3>
+                                    <p class="project-card__tech">React</p>
+                                    <p class="project-card__desc">Полнофункциональный интернет-магазин с корзиной</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="col-md-6 col-lg-4" data-category="html">
+                            <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                                <div class="project-card__image">
+                                    <img src="../images/portfolio.jpg" alt="Портфолио">
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Портфолио</h3>
+                                    <p class="project-card__tech">Bootstrap</p>
+                                    <p class="project-card__desc">Адаптивное портфолио на Bootstrap 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Project Modals -->
+        <!-- Modal 1 - Личный сайт -->
+        <div class="modal fade" id="projectModal1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Личный сайт</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="mb-4">
+                            <i class="bi bi-laptop display-1 text-primary"></i>
+                        </div>
+                        <h4>Этот проект уже перед вами! 🎯</h4>
+                        <p class="lead">Вы сейчас находитесь на этом самом личном сайте-портфолио.</p>
+                        <div class="project-links mt-4">
+                            <a href="../index.html" class="btn btn-primary me-2">
+                                <i class="bi bi-house me-1"></i>Перейти на главную
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 - Todo-приложение -->
+        <div class="modal fade" id="projectModal2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Todo-приложение</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="mb-4">
+                            <i class="bi bi-clock display-1 text-warning"></i>
+                        </div>
+                        <h4>Проект в разработке ⚡</h4>
+                        <p class="lead">Этот проект сейчас находится в стадии активной разработки.</p>
+                        <p>Скоро здесь появится полнофункциональное приложение для управления задачами!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 - Интернет-магазин -->
+        <div class="modal fade" id="projectModal3" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Интернет-магазин</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="mb-4">
+                            <i class="bi bi-cart display-1 text-success"></i>
+                        </div>
+                        <h4>Проект в разработке 🛒</h4>
+                        <p class="lead">Интернет-магазин находится в процессе создания.</p>
+                        <p>В ближайшее время здесь будет полнофункциональная платформа для онлайн-продаж!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 - Портфолио на Bootstrap -->
+        <div class="modal fade" id="projectModal4" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Портфолио на Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="mb-4">
+                            <i class="bi bi-bootstrap display-1 text-info"></i>
+                        </div>
+                        <h4>Этот проект! 🚀</h4>
+                        <p class="lead">Вы сейчас просматриваете это самое портфолио, созданное на Bootstrap 5.</p>
+                        <div class="project-links mt-4">
+                            <a href="https://github.com/pendal4f/frontend-and-backend-practice-13-14" class="btn btn-primary me-2" target="_blank">
+                                <i class="bi bi-github me-1"></i>Исходный код
+                            </a>
+                            <a href="../index.html" class="btn btn-outline-primary">
+                                <i class="bi bi-eye me-1"></i>Посмотреть сайт
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer__text mb-0">© 2025 Контакты</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer__contact mb-0">
+                            Телефон: <a href="tel:+79060432354">+7 (906) 043-23-54</a> | 
+                            Email: <a href="mailto:petrkhalin33@gmail.com">petrkhalin33@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/theme.js"></script>
+    <script src="../scripts/projects.js"></script>
+</body>
+</html>

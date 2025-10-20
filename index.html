@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Bootstrap версия</title>
+    <title>Портфолио - Главная</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/styles.css">
@@ -16,8 +16,8 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h1 class="header__title h3 mb-1">Моё Портфолио</h1>
-                        <p class="mb-0 opacity-75">Студент разработчик</p>
+                        <h1 class="header__title h3 mb-1">Халин Пётр Сергеевич</h1>
+                        <p class="mb-0 opacity-75">Студент-разработчик</p>
                     </div>
                     <div class="col-auto">
                         <button id="themeToggle" class="theme-btn" type="button">🌞</button>
@@ -31,9 +31,8 @@
             <div class="container">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Главная</a></li>
-                    <li class="nav__item"><a class="nav__link" href="pages/news.html">Новости</a></li>
-                    <li class="nav__item"><a class="nav__link" href="pages/practices.html">Практики</a></li>
-                    <li class="nav__item"><a class="nav__link" href="pages/goods.html">Товары</a></li>
+                    <li class="nav__item"><a class="nav__link" href="pages/projects.html">Проекты</a></li>
+                    <li class="nav__item"><a class="nav__link" href="pages/diary.html">Дневник</a></li>
                     <li class="nav__item"><a class="nav__link" href="pages/contacts.html">Контакты</a></li>
                 </ul>
             </div>
@@ -42,47 +41,18 @@
         <!-- Main Content -->
         <main class="content">
             <div class="container">
-                <!-- Profile Section -->
-                <section class="profile mb-5">
-                    <div class="card shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-3 text-center mb-3 mb-md-0">
-                                    <img src="images/avtor.jpg" alt="Фото автора" 
-                                         class="profile__photo img-fluid rounded-circle">
-                                </div>
-                                <div class="col-md-9">
-                                    <h2 class="profile__name h4 text-primary">Халин Пётр Сергеевич</h2>
-                                    <p class="profile__group text-muted mb-2">
-                                        <i class="bi bi-bookmark-check-fill text-primary"></i>
-                                        Студент группы ЭФБО-11-24
-                                    </p>
-                                    <div class="d-flex gap-2 flex-wrap justify-content-center">
-                                        <span class="badge bg-primary">HTML/CSS</span>
-                                        <span class="badge bg-success">JavaScript</span>
-                                        <span class="badge bg-info">Bootstrap</span>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Hero Section -->
+                <section class="hero mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h2 class="hero__title">Привет! Я студент группы ЭФБО-11-24</h2>
+                            <p class="hero__subtitle">Увлекаюсь веб-разработкой</p>
+                            <a href="assets/resume.pdf" class="btn btn-primary btn-lg" download>
+                                <i class="bi bi-download me-2"></i>Скачать резюме
+                            </a>
                         </div>
-                    </div>
-                </section>
-
-                <!-- About Section -->
-                <section class="about mb-5">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-light">
-                            <h3 class="about__title h5 mb-0">
-                                <i class="bi bi-person-circle text-primary me-2"></i>
-                                Обо мне
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text text-center">
-                                Я родился в Москве в 2006 на цветном бульваре 0_o.<br>
-                                Глупость рано ударила в голову. В четыре активно ругался. Потом школа, форма, хор, драки, клей.
-                                Так я становился всё сильней. Воровал деньги в раздевалке у бабушек.
-                            </p>
+                        <div class="col-md-6 text-center">
+                            <img src="images/avtor.jpg" alt="Фото студента" class="hero__photo img-fluid rounded-circle">
                         </div>
                     </div>
                 </section>
@@ -97,37 +67,80 @@
                             </h3>
                         </div>
                         <div class="card-body">
-                            <ul class="skills__grid">
-                                <li class="skill skill--upper">Навык 1: умею воровать деньги бабушек</li>
-                                <li class="skill skill--upper">Навык 2: умею писать стихи ну или стоя</li>
-                                <li class="skill skill--lower">Навык 3: умею готовить, для себя</li>
-                                <li class="skill skill--lower">Навык 4: умею элегантно оскорбить</li>
-                            </ul>
+                            <div class="skill-bars">
+                                <div class="skill-bar">
+                                    <div class="skill-info">
+                                        <span>HTML/CSS</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-info">
+                                        <span>JavaScript</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-info">
+                                        <span>Bootstrap</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-info">
+                                        <span>React</span>
+                                        <span>60%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- Experience Section -->
-                <section class="experience">
-                    <h2 class="section-title">Мой опыт работы</h2>
-                    
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="experience__card h-100">
-                                <h3 class="experience__title">Опыт 1</h3>
-                                <p class="experience__desc">Работал фантазёром. Сочинял и вымышлял.</p>
-                            </div>
+                <!-- Best Projects Section -->
+                <section class="best-projects">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-light">
+                            <h3 class="h5 mb-0">
+                                <i class="bi bi-star-fill text-primary me-2"></i>
+                                Лучшие проекты
+                            </h3>
                         </div>
-                        <div class="col-md-6">
-                            <div class="experience__card h-100">
-                                <h3 class="experience__title">Опыт 2</h3>
-                                <p class="experience__desc">Подрабатывал воровством. Воровал и продавал.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="experience__card h-100">
-                                <h3 class="experience__title">Опыт 3</h3>
-                                <p class="experience__desc">Работал поваром. Готовил и орал.</p>
+                        <div class="card-body">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="project-card text-center">
+                                        <div class="project-icon">П1</div>
+                                        <h4>Личный сайт</h4>
+                                        <p>HTML, CSS, JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="project-card text-center">
+                                        <div class="project-icon">П2</div>
+                                        <h4>Todo-приложение</h4>
+                                        <p>React, Bootstrap</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="project-card text-center">
+                                        <div class="project-icon">П3</div>
+                                        <h4>Интернет-магазин</h4>
+                                        <p>JavaScript, API</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,7 +153,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="footer__text mb-0">Спасибо, что посещаете этот сайт :]</p>
+                        <p class="footer__text mb-0">© 2025 Контакты</p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <p class="footer__contact mb-0">
@@ -151,10 +164,9 @@
                 </div>
             </div>
         </footer>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="theme.js"></script>
+    <script src="scripts/theme.js"></script>
 </body>
 </html>
