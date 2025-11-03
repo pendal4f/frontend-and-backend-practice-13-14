@@ -2239,11 +2239,3 @@ img {
 .loaded {
     opacity: 1;
 }
-
-/* Performance optimizations */
-@media (prefers-reduced-data: reduce) {
-    .hero__photo,
-    .project-card__image img {
-        loading: lazy;
-    }
-}
